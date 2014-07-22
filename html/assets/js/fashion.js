@@ -26,11 +26,9 @@ $(document).ready(function($){
 		transition:1,// 0-None,1-Fade,2-Slide-Top,3-Slide-Right,4-Slide-Bottom,5-Slide-Left,6-Carousel-Right,7-Carousel Left
 		transition_speed:800,
 		slide_links:'false',//Individual links for each slide (Options: false, 'num', 'name', 'blank')
-		slides:[{image:'assets/images/shutterstock/9.jpg', title:'Image Credit: Colin Wojno'},
-				{image:'assets/images/shutterstock/3.jpg', title:'Image Credit: Maria Kazvan'},
-				{image:'assets/images/shutterstock/7.jpg', title:'Image Credit: Maria Kazvan'},
-				{image:'assets/images/shutterstock/8.jpg', title:'Image Credit: Maria Kazvan'},
-				{image:'assets/images/shutterstock/10.jpg', title:'Image Credit: Colin Wojno'}]
+		slides:[{image:'assets/images/excavator/1.jpg'},
+				{image:'assets/images/excavator/2.jpg'},
+				{image:'assets/images/excavator/3.jpg'}]
 	});
 });
 

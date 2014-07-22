@@ -355,5 +355,10 @@ $(window).load(function() {
 			$(this).append( '<span class="type-counter">'+$(".portfolio > li"+projecttype).length+'</span>' ); // Count The Specific Project Type
 		}
 	});
-	
+//Invintation to buy
+        $('#full').hide();
+        $('#message').hover(function(){
+            $('#full').toggle('slow');
+        });
+
 }); // END $(window).load();
