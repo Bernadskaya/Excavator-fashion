@@ -711,10 +711,13 @@ form .small button {
 }
 .btn {
     padding: 5px 20px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: inherit;
     vertical-align: inherit;
+    color:#ffffff;
 }
+
+
 .btn,
 .label {
     border: none;
@@ -725,15 +728,14 @@ form .small button {
     -ms-transition: opacity 0.25s linear;
     -o-transition: opacity 0.25s linear;
     transition: opacity 0.25s linear;
-    background-color: #000000;
+    background-color: #4c9fae;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-    opacity: .5;
 }
 .btn:hover,
 .label:hover,
 .btn:focus,
 .label:focus {
-    background-color: #c5c5c5;
+    background-color: #4EB8C7;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
     text-decoration: none;
@@ -741,7 +743,7 @@ form .small button {
 }
 .btn-default,
 .label-default {
-    color: #444444;
+    color: #fff;
     text-shadow: none;
 }
 .btn-primary,

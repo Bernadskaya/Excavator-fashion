@@ -360,5 +360,8 @@ $(window).load(function() {
         $('#message').hover(function(){
             $('#full').toggle('slow');
         });
+        $('#close').click(function(){
+            '#message'.hide('slow')
+        });
 
 }); // END $(window).load();
