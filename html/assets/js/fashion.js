@@ -23,8 +23,8 @@ $(document).ready(function($){
 	/* :::::::::::::: SUPER SIZED SLIDER ::::::::::::: */
 	$.supersized({
 		slide_interval:5000,// Length between transitions
-        startwidth: 1440,
         transition:1,// 0-None,1-Fade,2-Slide-Top,3-Slide-Right,4-Slide-Bottom,5-Slide-Left,6-Carousel-Right,7-Carousel Left
+		horizontal_center:1,
 		transition_speed:800,
 		slide_links:'false',//Individual links for each slide (Options: false, 'num', 'name', 'blank')
 		slides:[{image:'assets/images/excavator/1.jpg'},

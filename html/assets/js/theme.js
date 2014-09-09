@@ -356,12 +356,14 @@ $(window).load(function() {
 		}
 	});
 //Invintation to buy
-        $('#full').hide();
-        $('#message').hover(function(){
-            $('#full').toggle('slow');
-        });
-        $('#close').click(function(){
-            '#message'.hide('slow')
-        });
+	$('#full').hide();
+	$('#close').hide();
+	$('#message').hover(function(){
+		$('#full').toggle('slow');
+		$('#close').toggle('slow');
+	});
+	$('.close').click(function(){
+		$('#message').hide('slow')
+	});
 
 }); // END $(window).load();

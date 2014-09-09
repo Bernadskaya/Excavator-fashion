@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Шаблон для сайта аренды спецтехники - MuraveyWeb</title>
+    <link rel="icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts (more: http://www.google.com/fonts) -->
+    <!-- Main Font -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Headings -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- Handwritten -->
+    <link href="http://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <!-- Countdown, Pricing Table Price Tag -->
+    <link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <!-- Logo -->
+    <link href="http://fonts.googleapis.com/css?family=Cantora+One" rel="stylesheet" type="text/css">
+
+
+    <link href="assets/css/supersized.css" rel="stylesheet" media="screen">
+    <link href="assets/css/supersized.shutter.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- CDN Bootstrap & FontAwesome -->
+    <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/bxslider.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme Specific CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Predefined Color Scheme -->
+    <link href="assets/css/bluedrops.css" rel="stylesheet">
+
+    <!-- LESS - Development Only
+    <link href="assets/less/styles.less" rel="stylesheet/less" />
+    <script>less = { env: 'development' };</script>
+    <script src="assets/js/less.js"></script>
+    -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <link href="assets/css/ie8.css" rel="stylesheet">
+    <![endif]-->
+
+</head>
+<body>
+<!--Thumbnail Navigation-->
+<div id="prevthumb"></div>
+<div id="nextthumb"></div>
+
+<!--Arrow Navigation-->
+<a id="prevslide" class="load-item"></a>
+<a id="nextslide" class="load-item"></a>
+
+<div id="thumb-tray" class="load-item">
+    <div id="thumb-back"></div>
+    <div id="thumb-forward"></div>
+</div>
+
+<!--Time Bar-->
+<div id="progress-back" class="load-item">
+    <div id="progress-bar"></div>
+</div>
+
+<!--Control Bar-->
+<div id="controls-wrapper" class="load-item">
+    <div id="controls">
+
+        <a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+
+        <!--Slide counter-->
+        <div id="slidecounter">
+            <span class="slidenumber"></span> / <span class="totalslides"></span>
+        </div>
+
+        <!--Slide captions displayed here-->
+        <div id="slidecaption"></div>
+
+        <!--Thumb Tray button-->
+        <a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+
+        <!--Navigation-->
+        <ul id="slide-list"></ul>
+
+    </div>
+</div>
+
+<!-- JavaScript Libraries & jQuery Plugins -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<!--<script src="assets/js/jquery.bxslider.min.js"></script>-->
+<!--<script src="assets/js/modernizr.custom.js"></script>-->
+<!--<script src="assets/js/jquery.isotope.min.js"></script>-->
+<!--<script src="assets/js/jquery.fittext.js"></script>-->
+<!--<script src="assets/js/jquery.fitvids.js"></script>-->
+<!--<script type="text/javascript" src="assets/plugin/jquery.form.js"></script>-->
+<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
+<!--<script src="assets/js/jquery.hoverdir.js"></script>-->
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/supersized.3.2.7.min.js"></script>
+<script src="assets/js/supersized.shutter.min.js"></script>
+<!--<script src="assets/js/validation.js"></script>-->
+<!--<script src="assets/js/theme.js"></script>-->
+<!--<script src="assets/js/fashion.js"></script>-->
+<script type="text/javascript">
+
+    jQuery(function($){
+
+        $.supersized({
+
+            // Functionality
+            slide_interval          :   3000,		// Length between transitions
+            transition              :   3, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+            transition_speed		:	700,		// Speed of transition
+
+            // Components
+            slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+            slides 					:  	[			// Slideshow Images
+                {image : 'assets/images/excavator/1.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-1.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+                {image : 'assets/images/excavator/2.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-2.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+                {image : 'assets/images/excavator/3.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-3.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'}
+
+            ]
+
+        });
+    });
+
+</script>
+</body>
+</html>
